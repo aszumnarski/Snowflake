@@ -24,11 +24,12 @@ public class RuleApplicabilityRepository extends BaseRepository<RuleApplicabilit
                 ACCOUNT_ITEM,
                 RESPONSIBILITY_GROUP,
                 KONTO,
-                FILENAME
+                FILENAME,
+                IMPORT_DATE
             )
             VALUES
             (
-                ?,?,?,?,?,?,?,?
+                ?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP()
             )
             """;
 

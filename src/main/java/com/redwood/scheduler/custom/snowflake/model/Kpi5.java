@@ -1,6 +1,6 @@
 package com.redwood.scheduler.custom.snowflake.model;
 
-public class RedwoodTask {
+public class Kpi5 {
 
     private String owner;
     private String assignee;
@@ -17,10 +17,10 @@ public class RedwoodTask {
     private String delegationHistory;
     private String filename;
 
-    public RedwoodTask() {
+    public Kpi5() {
     }
 
-    public RedwoodTask(
+    public Kpi5(
             String owner,
             String assignee,
             String description,

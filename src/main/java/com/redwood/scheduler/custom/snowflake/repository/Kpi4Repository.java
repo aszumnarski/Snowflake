@@ -53,14 +53,15 @@ public class Kpi4Repository extends BaseRepository<Kpi4> {
                 UNANALYZED_QUANTITY,
                 UNANALYZED_BALANCE,
                 REQUESTID,
-                FILENAME
+                FILENAME,
+                IMPORT_DATE
             )
             VALUES
             (
                 ?,?,?,?,?,?,?,?,?,?,
                 ?,?,?,?,?,?,?,?,?,?,
                 ?,?,?,?,?,?,?,?,?,?,
-                ?,?,?,?,?,?
+                ?,?,?,?,?,?,CURRENT_TIMESTAMP()
             )
             """;
 

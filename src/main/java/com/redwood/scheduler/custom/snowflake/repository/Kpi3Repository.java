@@ -26,11 +26,12 @@ public class Kpi3Repository extends BaseRepository<Kpi3> {
                 CLEARED,
                 ERRORS,
                 ACCOUNTITEMS,
-                FILENAME
+                FILENAME,
+                IMPORT_DATE
             )
             VALUES
             (
-                ?,?,?,?,?,?,?,?,?
+                ?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP()
             )
             """;
 
