@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.redwood.scheduler.custom.snowflake'
-version = '1.0.0'
+version = '1.0.1'
 
 repositories {
     mavenCentral()
@@ -39,4 +39,6 @@ dependencies {
 
     // Optional: if `valet` contains jars
     implementation fileTree(dir: "C:/Users/z004y4es/IdeaProjects/2025.2.0.6-2026-03-06-1610_gd3daddfbcbb/valet", include: ["*.jar"])
+
+    implementation 'org.apache.commons:commons-csv:1.10.0'
 }

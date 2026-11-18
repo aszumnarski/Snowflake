@@ -24,13 +24,11 @@ public class Kpi3CsvImporter
             JobFile file)
             throws Exception {
 
-        List<Kpi3> records =
-                new ArrayList<>();
+        List<Kpi3> records = new ArrayList<>();
 
         for (String[] row : CsvUtils.read(file)) {
 
-            Kpi3 record =
-                    new Kpi3();
+            Kpi3 record = new Kpi3();
 
             record.setPeriod(get(row, 0));
             record.setCompanyCode(get(row, 1));
